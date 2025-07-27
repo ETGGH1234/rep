@@ -1,0 +1,44 @@
+{
+  "target_wallet": null,
+  "user_wallet_path": "wallet.json",
+  "slippage": 0.5,
+  "compute_unit_limit": 200000,
+  "compute_unit_price": 1000,
+  "tip_amount": 0,
+  "position_size": 1.0,
+  "max_retries": 3,
+  "rpc_url": "https://api.mainnet-beta.solana.com",
+  "ws_url": "wss://api.mainnet-beta.solana.com",
+  "_comments": {
+    "target_wallet": "Solana wallet address to copy trades from (base58 string)",
+    "user_wallet_path": "Path to your Solana wallet JSON file",
+    "slippage": "Slippage tolerance as percentage (0.1 = 0.1%)",
+    "compute_unit_limit": "Maximum compute units per transaction (50000-1400000)",
+    "compute_unit_price": "Price per compute unit in micro-lamports (higher = faster execution)",
+    "tip_amount": "Optional validator tip in lamports (0 = no tip)",
+    "position_size": "Fraction of original trade size to copy (0.1 = 10%, 1.0 = 100%)",
+    "max_retries": "Maximum number of retry attempts for failed transactions",
+    "rpc_url": "Solana RPC endpoint URL",
+    "ws_url": "Solana WebSocket endpoint URL"
+  },
+  "advanced_settings": {
+    "portfolio_limit_percent": 5.0,
+    "min_sol_balance": 0.01,
+    "log_level": "INFO",
+    "enable_notifications": false,
+    "notification_webhook": null
+  },
+  "risk_management": {
+    "max_slippage_percent": 5.0,
+    "min_trade_value_usd": 1.0,
+    "max_trade_value_usd": 10000.0,
+    "blacklisted_tokens": [],
+    "whitelisted_tokens": []
+  },
+  "performance_settings": {
+    "connection_timeout": 30,
+    "request_timeout": 15,
+    "websocket_ping_interval": 20,
+    "max_concurrent_requests": 5
+  }
+}
